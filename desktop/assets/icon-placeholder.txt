@@ -1,0 +1,23 @@
+ICON PLACEHOLDER
+
+To complete the desktop app setup, you need to add the following icon files to this directory:
+
+1. icon.png  - 512x512 PNG (for all platforms and fallback)
+2. icon.ico  - Windows icon file
+3. icon.icns - macOS icon file
+
+You can create these icons using:
+- Online tools: https://icongenerator.org/
+- Photoshop/GIMP/Figma for PNG
+- CloudConvert for format conversion
+
+Recommended design:
+- Dark/light gradient background
+- Shadow or companion symbol
+- Mental health friendly colors (blues, purples, calming tones)
+- Simple, recognizable design
+
+Once you have your icons, replace this placeholder file with the actual icon files.
+
+For now, the app will work but may show a default/blank icon.
+
