@@ -2,6 +2,9 @@
 
 > A compassionate AI companion designed to provide emotional support and a safe space for mental well-being.
 
+**Developed by:** Abel Sirak  
+**License:** MIT License
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)
 ![React](https://img.shields.io/badge/react-18.2.0-blue)
@@ -338,38 +341,12 @@ Contributions are welcome! Please:
 
 ---
 
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙏 **Acknowledgments**
 
 - **OpenRouter** - For providing free AI models
 - **Tailwind CSS** - For the beautiful styling system
 - **Framer Motion** - For smooth animations
 - **The mental health community** - For inspiration and feedback
-
----
-
-## 💙 **Mental Health Resources**
-
-### **United States**
-- **988** - Suicide & Crisis Lifeline (call or text)
-- **741741** - Crisis Text Line (text HOME)
-- **1-800-662-4357** - SAMHSA National Helpline
-
-### **International**
-- [Befrienders Worldwide](https://www.befrienders.org/)
-- [IASP Crisis Centres](https://www.iasp.info/resources/Crisis_Centres/)
-
----
-
-## 📞 **Support**
-
-- **Issues:** [GitHub Issues](https://github.com/abel2800/AI-Shadow/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/abel2800/AI-Shadow/discussions)
 
 ---
 
