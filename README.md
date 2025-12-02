@@ -1,707 +1,384 @@
-# 💙 AI SHADOW - Your Digital Companion for Mental Well-Being
+# 💙 AI Shadow - Mental Health Companion
 
-<div align="center">
+> A compassionate AI companion designed to provide emotional support and a safe space for mental well-being.
 
-![AI Shadow Banner](https://via.placeholder.com/1200x300/0a0a0f/1a8dff?text=AI+SHADOW+-+Your+Companion)
-
-### **A Mental Health Support Companion - NOT a General AI**
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-18.3-blue.svg)](https://reactjs.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)](https://www.postgresql.org/)
-
-**[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [API](#-api-documentation) • [Contributing](#-contributing)**
-
-</div>
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)
+![React](https://img.shields.io/badge/react-18.2.0-blue)
 
 ---
 
-## 📋 Table of Contents
+## 🌟 **What is AI Shadow?**
 
-- [About](#-about)
-- [Features](#-features)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Database Setup](#-database-setup)
-- [Running the Application](#-running-the-application)
-- [API Documentation](#-api-documentation)
-- [Features Guide](#-features-guide)
-- [Screenshots](#-screenshots)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
+AI Shadow is a **mental health companion application** designed for people experiencing loneliness, stress, anxiety, or depression. It provides:
+
+- 💙 **Emotional Support** - A safe space to talk without judgment
+- ✍️ **Journaling** - Express feelings through guided writing
+- 📚 **Learning** - Understand emotions in a stress-free way
+- 💻 **Coding Help** - Programming support with mental health awareness
+- 🌍 **Translation** - Connect across languages with emotional sensitivity
+- 🤝 **Life Guidance** - Thoughtful advice for daily challenges
+
+**⚠️ Important:** AI Shadow is a companion, **not a therapist**. In crisis, call **988** (US) or your local emergency services.
 
 ---
 
-## 🎯 About
+## ✨ **Features**
 
-**AI SHADOW** is a compassionate digital companion designed to provide emotional support and mental well-being assistance. This is NOT a general AI assistant - it's specifically built to be a safe, non-judgmental space for people experiencing loneliness, stress, anxiety, or depression.
+### **🎭 Six Unique AI Modes**
 
-### ⚠️ IMPORTANT DISCLAIMER
+Each mode has its own personality and purpose:
 
-AI Shadow is:
-- ✅ A supportive companion for emotional conversations
-- ✅ A safe listening space without judgment
-- ✅ Here to provide comfort and understanding
+| Mode | Purpose |
+|------|---------|
+| **Emotional Support** | Pure listening and validation for your feelings |
+| **Journal & Express** | Guided writing exercises to process emotions |
+| **Learning Companion** | Stress-free learning with confidence building |
+| **Coding Support** | Programming help that considers your mental health |
+| **Language Bridge** | Translation with emotional and cultural sensitivity |
+| **Life Companion** | Gentle guidance to help you find your own answers |
 
-AI Shadow is NOT:
-- ❌ A therapist, doctor, or medical professional
-- ❌ A replacement for professional mental health care
-- ❌ Able to diagnose or treat mental health conditions
+### **🎨 Beautiful UI**
 
-**If you're in crisis, please contact: 988 (US) or your local emergency services**
+- Calming color palette (soft purples and blues)
+- 30+ smooth animations
+- Glassmorphism design
+- Responsive on all devices
 
-### Why AI Shadow?
+### **🖥️ Desktop App**
 
-- 💙 **Compassionate Support** - Gentle, warm, and emotionally present
-- 🫂 **Safe Space** - Non-judgmental listening and validation
-- 🎨 **Beautiful UI** - Calming glassmorphism design
-- 🔒 **Private & Secure** - Your conversations are protected
-- 📱 **Always Available** - 24/7 companion when you need to talk
-- 🖥️ **Desktop App** - Native Windows/Mac/Linux application
-- 🆘 **Crisis Resources** - Quick access to professional help
+- Native Electron desktop application
+- System tray integration
+- Keyboard shortcuts
+- Works offline (once configured)
 
----
+### **🔒 Privacy & Security**
 
-## ✨ Features
-
-### 💙 Support Modes
-
-- **6 Companion Modes:**
-  - 🫂 **Emotional Support** - A safe space to talk and share feelings
-  - ✏️ **Journal & Express** - Write to understand your emotions
-  - 🎓 **Learning Companion** - Learn without pressure or anxiety
-  - 💻 **Coding Support** - Patient help with programming
-  - 🌍 **Language Bridge** - Connect across languages
-  - 💡 **Life Companion** - Gentle guidance for daily challenges
-
-### 🎨 User Interface
-
-- Beautiful **dark mode** with cyber-blue accents
-- **Glassmorphism** UI design
-- Smooth **Framer Motion** animations
-- Responsive layout for all devices
-- Real-time typing indicators
-- **Syntax highlighting** for code blocks
-- **Markdown rendering** for formatted responses
-
-### 💬 Chat Features
-
-- Real-time AI conversations
-- Chat history with search functionality
-- Pin and archive conversations
-- Export chat history
-- Message copy functionality
-- Code syntax highlighting
-- Markdown support in AI responses
-
-### 📚 Prompt Library
-
-- Create custom prompt templates
-- Browse public templates
-- Category-based organization
-- Quick template search
-- Usage statistics tracking
-- One-click template usage
-
-### 📊 Dashboard & Analytics
-
-- Total chats and messages count
-- Token usage statistics
-- Favorite AI mode tracking
-- Recent conversation history
-- Activity overview
-- Visual analytics
-
-### ⚙️ Settings & Customization
-
-- Profile management
-- Notification preferences
-- Privacy controls
-- Appearance customization
-- Data export options
-- Account management
-
-### 🔐 Security
-
-- **JWT-based** authentication
-- **bcrypt** password hashing
-- Secure HTTP-only sessions
-- Rate limiting protection
-- Input validation
-- SQL injection prevention
+- Local PostgreSQL database
+- JWT authentication
+- Encrypted passwords (bcrypt)
+- Your data stays on your machine
 
 ---
 
-## 🛠 Technology Stack
+## 🚀 **Quick Start**
 
-### Frontend
-- **React 18.3** - Modern UI library
-- **Vite** - Lightning-fast build tool
-- **TailwindCSS** - Utility-first CSS framework
-- **Framer Motion** - Advanced animations
-- **Zustand** - State management
-- **React Router** - Client-side routing
-- **Axios** - HTTP client
-- **React Markdown** - Markdown rendering
-- **React Syntax Highlighter** - Code highlighting
-- **Lucide React** - Beautiful icons
+### **Prerequisites**
 
-### Backend
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web framework
-- **PostgreSQL** - Relational database
-- **JWT** - Authentication
-- **bcryptjs** - Password hashing
-- **Helmet** - Security headers
-- **CORS** - Cross-origin resource sharing
-- **Express Rate Limit** - API protection
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [PostgreSQL](https://www.postgresql.org/download/) (v12 or higher)
+- [Git](https://git-scm.com/)
 
-### AI Integration
-- OpenAI API compatible
-- Supports GPT-3.5, GPT-4, and other models
-- Custom system prompts per mode
-- Token usage tracking
+### **Installation**
 
----
-
-## 📁 Project Structure
-
-```
-ai-shadow/
-├── backend/                    # Backend API (Mental Health Companion)
-│   ├── config/
-│   │   └── database.js        # PostgreSQL configuration
-│   ├── controllers/
-│   │   ├── authController.js  # Authentication logic
-│   │   ├── aiController.js    # Mental health AI companion logic
-│   │   └── promptController.js # Prompt templates logic
-│   ├── middleware/
-│   │   └── auth.js           # JWT middleware
-│   ├── routes/
-│   │   ├── auth.js           # Auth routes
-│   │   ├── ai.js             # AI companion routes
-│   │   └── prompts.js        # Prompt routes
-│   ├── scripts/
-│   │   └── setupDatabase.js  # Database initialization
-│   ├── .env.example          # Environment variables template
-│   ├── .gitignore
-│   ├── package.json
-│   └── server.js             # Main server file
-│
-├── desktop/                   # Electron Desktop App
-│   ├── main.js               # Main Electron process
-│   ├── preload.js            # Preload script for security
-│   ├── assets/               # App icons and resources
-│   ├── package.json          # Desktop app configuration
-│   └── README.md             # Desktop app documentation
-│
-├── frontend/                  # Frontend React App
-│   ├── src/
-│   │   ├── api/
-│   │   │   ├── axios.js      # Axios configuration
-│   │   │   └── services.js   # API service functions
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── ChatSidebar.jsx
-│   │   │   └── MessageBubble.jsx
-│   │   ├── pages/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Chat.jsx
-│   │   │   ├── Profile.jsx
-│   │   │   ├── Settings.jsx
-│   │   │   └── PromptLibrary.jsx
-│   │   ├── store/
-│   │   │   └── useStore.js   # Zustand store
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── public/
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── postcss.config.js
-│
-└── README.md                  # This file
-```
-
----
-
-## 🚀 Installation
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
-- **PostgreSQL** (v15 or higher) - [Download](https://www.postgresql.org/download/)
-- **pgAdmin 4** (recommended) - Installed with PostgreSQL
-- **Git** - [Download](https://git-scm.com/)
-- **AI API Key** - Get from [OpenAI](https://platform.openai.com/) or compatible providers
-
-### Step 1: Clone the Repository
+#### **1. Clone Repository**
 
 ```bash
-git clone https://github.com/yourusername/ai-shadow.git
-cd ai-shadow
+git clone https://github.com/abel2800/AI-Shadow.git
+cd AI-Shadow
 ```
 
-### Step 2: Install Dependencies
+#### **2. Setup Database**
 
-#### Install Backend Dependencies
 ```bash
+# Login to PostgreSQL
+psql -U postgres
+
+# Create database
+CREATE DATABASE ai_shadow;
+\q
+
+# Run setup script
 cd backend
 npm install
+node scripts/setupDatabase.js
 ```
 
-#### Install Frontend Dependencies
-```bash
-cd ../frontend
-npm install
-```
+#### **3. Configure Environment**
 
----
-
-## ⚙️ Configuration
-
-### Backend Configuration
-
-1. **Create `.env` file** in the `backend` directory:
+Create `backend/.env` from the example:
 
 ```bash
 cd backend
 cp .env.example .env
 ```
 
-2. **Edit `.env` file** with your configuration:
+Edit `.env` with your settings:
 
 ```env
-# PostgreSQL Database Configuration
+# Database
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=ai_shadow
 DB_USER=postgres
-DB_PASSWORD=your_postgres_password
+DB_PASSWORD=your_password
 
-# JWT Secret Key (generate a strong random string)
-JWT_SECRET=your_super_secret_jwt_key_at_least_32_characters_long
+# JWT Secret (generate a random string)
+JWT_SECRET=your_secret_key
 
-# AI API Configuration
-AI_API_KEY=your_openai_api_key_here
-AI_API_URL=https://api.openai.com/v1/chat/completions
-AI_MODEL=gpt-3.5-turbo
+# AI API (OpenRouter or OpenAI)
+AI_API_KEY=your_api_key
+AI_API_URL=https://openrouter.ai/api/v1/chat/completions
+AI_MODEL=meta-llama/llama-3.2-3b-instruct:free
 
-# Server Configuration
+# Server
 PORT=5000
 NODE_ENV=development
-
-# CORS Origins
-CORS_ORIGIN=http://localhost:5173
+FRONTEND_URL=http://localhost:5173
 ```
 
-### Frontend Configuration
+#### **4. Install Dependencies**
 
-The frontend uses Vite and connects to the backend API. No additional configuration needed, but you can create a `.env` file in the `frontend` directory if you want to customize the API URL:
-
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
----
-
-## 🗄️ Database Setup
-
-### Option 1: Using pgAdmin 4 (Recommended for Beginners)
-
-1. **Open pgAdmin 4**
-
-2. **Create a new database:**
-   - Right-click on "Databases" → Create → Database
-   - Name: `ai_shadow`
-   - Owner: `postgres`
-   - Click "Save"
-
-3. **Run the setup script:**
-   ```bash
-   cd backend
-   npm run db:setup
-   ```
-
-### Option 2: Using Command Line
-
-1. **Connect to PostgreSQL:**
-   ```bash
-   psql -U postgres
-   ```
-
-2. **Create database:**
-   ```sql
-   CREATE DATABASE ai_shadow;
-   ```
-
-3. **Exit and run setup script:**
-   ```bash
-   \q
-   cd backend
-   npm run db:setup
-   ```
-
-### Verify Database Setup
-
-The setup script creates the following tables:
-- `users` - User accounts
-- `chats` - Chat conversations
-- `messages` - Chat messages
-- `prompt_templates` - Saved prompt templates
-- `user_stats` - User statistics
-
-You can verify in pgAdmin 4:
-1. Expand `ai_shadow` database
-2. Expand "Schemas" → "public" → "Tables"
-3. You should see all 5 tables
-
----
-
-## 🎮 Running the Application
-
-### Development Mode
-
-#### Terminal 1 - Start Backend Server
 ```bash
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../frontend
+npm install
+
+# Desktop (optional)
+cd ../desktop
+npm install
+```
+
+#### **5. Start Application**
+
+**Option 1: Manual (3 terminals)**
+
+```bash
+# Terminal 1 - Backend
 cd backend
 npm run dev
-```
 
-Backend will run on: http://localhost:5000
-
-#### Terminal 2 - Start Frontend Dev Server
-```bash
+# Terminal 2 - Frontend
 cd frontend
 npm run dev
+
+# Terminal 3 - Desktop (optional)
+cd desktop
+npm start
 ```
 
-Frontend will run on: http://localhost:5173
+**Option 2: Windows Quick Start**
 
-### Production Build
-
-#### Build Frontend
 ```bash
-cd frontend
-npm run build
-```
-
-#### Start Backend (Production)
-```bash
-cd backend
-NODE_ENV=production npm start
+# Double-click or run:
+start-all.bat
 ```
 
 ---
 
-## 🔌 API Documentation
+## 🎯 **Usage**
 
-### Base URL
+### **First Time Setup**
+
+1. **Access the app:** Open http://localhost:5173
+2. **Register:** Create your account
+3. **Choose a mode:** Select from 6 AI personalities
+4. **Start chatting:** Share what's on your mind
+
+### **Switching Modes**
+
+You can switch between AI modes anytime:
+- Click the mode dropdown in the chat header
+- Each mode responds differently to the same question
+- Your conversation history is saved per mode
+
+### **Crisis Resources**
+
+If you're in crisis:
+- Click the **"Need Help?"** button (red button in navbar)
+- Or press the **Help** menu → **Crisis Resources**
+
+**US Resources:**
+- **988** - Suicide & Crisis Lifeline (call or text)
+- **741741** - Crisis Text Line (text HOME)
+
+---
+
+## 🛠️ **Technology Stack**
+
+### **Frontend**
+- React 18
+- Vite
+- TailwindCSS
+- Framer Motion
+- Zustand (state management)
+- Axios
+
+### **Backend**
+- Node.js
+- Express.js
+- PostgreSQL
+- JWT Authentication
+- bcrypt
+
+### **Desktop**
+- Electron
+- Native system integration
+
+### **AI**
+- OpenRouter API
+- OpenAI API (compatible)
+
+---
+
+## 📁 **Project Structure**
+
 ```
-http://localhost:5000/api
-```
-
-### Authentication Endpoints
-
-#### Register User
-```http
-POST /auth/register
-Content-Type: application/json
-
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "securepassword123"
-}
-```
-
-#### Login
-```http
-POST /auth/login
-Content-Type: application/json
-
-{
-  "email": "john@example.com",
-  "password": "securepassword123"
-}
-```
-
-#### Get Profile
-```http
-GET /auth/profile
-Authorization: Bearer <token>
-```
-
-### Chat Endpoints
-
-#### Send Message
-```http
-POST /ai/chat
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "chatId": 1,          // Optional, creates new chat if not provided
-  "message": "Hello AI!",
-  "mode": "general",    // general, writing, tutor, code, translator, advisor
-  "model": "gpt-3.5-turbo"
-}
-```
-
-#### Get Chat History
-```http
-GET /ai/chats?limit=50&offset=0
-Authorization: Bearer <token>
-```
-
-#### Get Single Chat
-```http
-GET /ai/chats/:chatId
-Authorization: Bearer <token>
-```
-
-#### Search Chats
-```http
-GET /ai/chats/search?query=search_term
-Authorization: Bearer <token>
-```
-
-#### Update Chat
-```http
-PUT /ai/chats/:chatId
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "title": "New Title",
-  "is_pinned": true,
-  "is_archived": false
-}
-```
-
-#### Delete Chat
-```http
-DELETE /ai/chats/:chatId
-Authorization: Bearer <token>
-```
-
-### Prompt Template Endpoints
-
-#### Get Templates
-```http
-GET /prompts?category=writing
-Authorization: Bearer <token>
-```
-
-#### Create Template
-```http
-POST /prompts
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "title": "Essay Writer",
-  "description": "Write essays on any topic",
-  "prompt": "Write an essay about {topic}",
-  "category": "writing",
-  "is_public": false
-}
+AI-Shadow/
+├── backend/              # Express.js API server
+│   ├── config/          # Database configuration
+│   ├── controllers/     # Request handlers
+│   ├── middleware/      # Auth middleware
+│   ├── routes/          # API routes
+│   ├── scripts/         # Database setup
+│   └── server.js        # Entry point
+├── frontend/            # React web app
+│   ├── src/
+│   │   ├── api/        # API services
+│   │   ├── components/ # React components
+│   │   ├── pages/      # Page components
+│   │   └── store/      # State management
+│   └── index.html
+├── desktop/             # Electron desktop app
+│   ├── main.js         # Main process
+│   └── preload.js      # Preload script
+├── start-all.bat       # Windows startup script
+└── README.md           # This file
 ```
 
 ---
 
-## 📖 Features Guide
-
-### 1. Getting Started
-
-1. **Register an Account**
-   - Navigate to http://localhost:5173
-   - Click "Create one now"
-   - Fill in your details
-   - Click "Create Account"
-
-2. **Dashboard Overview**
-   - View your statistics
-   - Quick access to AI modes
-   - Recent conversations
-
-### 2. Starting a Chat
-
-1. Click on any AI mode card or "Chat" in navigation
-2. Select your preferred AI mode from the dropdown
-3. Type your message
-4. Press Enter or click Send
-
-### 3. Using Prompt Templates
-
-1. Navigate to "Prompts" in the navigation
-2. Browse available templates
-3. Click "Use Template" to start a chat with that prompt
-4. Click "Copy" to copy the prompt text
-5. Create your own templates with "Create Template"
-
-### 4. Managing Chats
-
-- **Search:** Use the search bar in the chat sidebar
-- **Pin:** Update chat settings to pin important conversations
-- **Delete:** Click the trash icon to delete a chat
-- **Export:** Use Settings → Data to export chat history
-
-### 5. Customizing Settings
-
-- **Profile:** Update your name and profile information
-- **Notifications:** Configure notification preferences
-- **Privacy:** Control data sharing and storage
-- **Appearance:** Customize theme and font size
-- **Data:** Export or delete your data
-
----
-
-## 📸 Screenshots
-
-### Login Page
-Beautiful futuristic login with animated background
+## 🎨 **Screenshots**
 
 ### Dashboard
-Analytics and quick access to AI modes
+Beautiful overview with mode selection and statistics.
 
 ### Chat Interface
-Real-time AI conversations with syntax highlighting
+Calming design with floating particles and smooth animations.
 
-### Prompt Library
-Browse and create custom prompt templates
-
-### Settings
-Comprehensive settings and customization options
+### Mode-Specific Prompts
+Each mode has unique quick-start prompts tailored to its purpose.
 
 ---
 
-## 🐛 Troubleshooting
+## 🔧 **Configuration**
 
-### Common Issues
+### **API Keys**
 
-#### Database Connection Error
-```
-Error: Connection terminated unexpectedly
-```
-**Solution:** Check if PostgreSQL is running and credentials in `.env` are correct
+#### **Option 1: OpenRouter (Recommended - Has Free Models)**
 
-#### Port Already in Use
-```
-Error: listen EADDRINUSE: address already in use :::5000
-```
-**Solution:** Change `PORT` in `.env` or kill the process using the port
+1. Sign up at https://openrouter.ai/
+2. Get your API key
+3. In `.env`:
+   ```env
+   AI_API_KEY=sk-or-v1-...
+   AI_API_URL=https://openrouter.ai/api/v1/chat/completions
+   AI_MODEL=meta-llama/llama-3.2-3b-instruct:free
+   ```
 
-#### AI API Error
-```
-Error: Request failed with status code 401
-```
-**Solution:** Verify your `AI_API_KEY` in `.env` is valid
+#### **Option 2: OpenAI**
 
-#### Frontend Build Error
-```
-Module not found
-```
-**Solution:** Delete `node_modules` and `package-lock.json`, then run `npm install` again
+1. Sign up at https://platform.openai.com/
+2. Add billing and credits
+3. In `.env`:
+   ```env
+   AI_API_KEY=sk-...
+   AI_API_URL=https://api.openai.com/v1/chat/completions
+   AI_MODEL=gpt-3.5-turbo
+   ```
 
-### Getting Help
+### **Database**
 
-- 📧 **Email:** support@aishadow.com
-- 💬 **Discord:** [Join our community](https://discord.gg/aishadow)
-- 🐛 **Issues:** [GitHub Issues](https://github.com/yourusername/ai-shadow/issues)
+Default PostgreSQL connection:
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=ai_shadow
+DB_USER=postgres
+```
 
 ---
 
-## 🤝 Contributing
+## 🤝 **Contributing**
 
-We welcome contributions! Here's how you can help:
-
-### Development Setup
+Contributions are welcome! Please:
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes
-4. Commit: `git commit -m 'Add amazing feature'`
-5. Push: `git push origin feature/amazing-feature`
-6. Open a Pull Request
-
-### Code Style
-
-- Use ESLint for JavaScript
-- Follow React best practices
-- Write meaningful commit messages
-- Add comments for complex logic
-- Update documentation for new features
-
-### Areas to Contribute
-
-- 🎨 UI/UX improvements
-- 🐛 Bug fixes
-- ✨ New features
-- 📝 Documentation
-- 🌐 Translations
-- ⚡ Performance optimizations
-- 🧪 Test coverage
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-## 📄 License
+## 🐛 **Troubleshooting**
+
+### **"Failed to send message"**
+- Check if backend is running on port 5000
+- Verify AI API key is valid
+- Check API credits/quota
+
+### **Database connection error**
+- Ensure PostgreSQL is running
+- Verify credentials in `.env`
+- Check if database exists: `psql -U postgres -l`
+
+### **Frontend won't load**
+- Check if running on port 5173
+- Clear browser cache
+- Run `npm install` in frontend directory
+
+### **White screen on desktop app**
+- Ensure backend and frontend are running first
+- Check console logs (`Ctrl+Shift+I`)
+
+---
+
+## 📄 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-MIT License
+---
 
-Copyright (c) 2024 AI Shadow
+## 🙏 **Acknowledgments**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
+- **OpenRouter** - For providing free AI models
+- **Tailwind CSS** - For the beautiful styling system
+- **Framer Motion** - For smooth animations
+- **The mental health community** - For inspiration and feedback
 
 ---
 
-## 🙏 Acknowledgments
+## 💙 **Mental Health Resources**
 
-- **OpenAI** for providing the AI API
-- **React Team** for the amazing framework
-- **PostgreSQL Community** for the robust database
-- **All Contributors** who help improve AI Shadow
+### **United States**
+- **988** - Suicide & Crisis Lifeline (call or text)
+- **741741** - Crisis Text Line (text HOME)
+- **1-800-662-4357** - SAMHSA National Helpline
 
----
-
-## 🌟 Star History
-
-If you find AI Shadow useful, please consider giving it a star on GitHub!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-shadow&type=Date)](https://star-history.com/#yourusername/ai-shadow&Date)
+### **International**
+- [Befrienders Worldwide](https://www.befrienders.org/)
+- [IASP Crisis Centres](https://www.iasp.info/resources/Crisis_Centres/)
 
 ---
 
-## 📞 Contact
+## 📞 **Support**
 
-- **Website:** https://aishadow.com
-- **Email:** contact@aishadow.com
-- **Twitter:** [@AI_Shadow](https://twitter.com/AI_Shadow)
-- **GitHub:** [github.com/yourusername/ai-shadow](https://github.com/yourusername/ai-shadow)
+- **Issues:** [GitHub Issues](https://github.com/abel2800/AI-Shadow/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/abel2800/AI-Shadow/discussions)
 
 ---
 
-<div align="center">
+## ⭐ **Star This Project**
 
-**Made with ❤️ by the AI Shadow Team**
+If AI Shadow helped you, please consider giving it a star! ⭐
 
-[⬆ Back to Top](#-ai-shadow---your-intelligent-personal-ai-assistant)
+---
 
-</div>
+**Made with 💙 for mental health awareness**
 
+*Remember: You are not alone. Reaching out is a sign of strength.*
